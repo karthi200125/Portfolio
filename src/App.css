@@ -1,0 +1,41 @@
+.app{
+    background: linear-gradient(
+        92.23deg,
+        #b936ee 100%,
+        #ff56f6 117.04%
+    );
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    animation: move 1s linear infinite forwards;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.bg-circle1{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 200px;
+    width: 200px;
+    background: rgb(0,255,255);
+    filter: blur(140px);
+}
+.bg-circle2{
+    position: fixed;
+    bottom: 100px;
+    right: 250px;
+    height: 200px;
+    width: 200px;
+    background: rgb(183,0,255);
+    filter: blur(150px);
+}

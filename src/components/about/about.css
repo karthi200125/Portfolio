@@ -1,0 +1,265 @@
+.home-container{
+    background: rgba(2,2,26);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-container .logo{
+    position: inherit;
+    height: -50px;
+    height: 520px;
+    width: 520px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home-container .logo .main-img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+.home-container .logo .main-img{
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.home-container .logo .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4,4,44);
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+.home-container .logo .main-img .circle{
+    opacity: 1;
+}
+.home-container .logo .main-img .circle:nth-child(1){
+    background: url(../photos/java.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-210%);
+}
+.home-container .logo .main-img .circle:nth-child(2){
+    background: url(../photos/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%,-150%);
+}
+.home-container .logo .main-img .circle:nth-child(3){
+    background: url(../photos/css.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(210%);
+}
+.home-container .logo .main-img .circle:nth-child(4){
+    background: url(../photos/bootstrap.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%,150%);
+}
+.home-container .logo .main-img .circle:nth-child(5){
+    background: url(../photos/javascript.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(210%);
+}
+.home-container .logo .main-img .circle:nth-child(6){
+    background: url(../photos/reactjs.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%,150%);
+}
+.home-container .logo .main-img .circle:nth-child(7){
+    background: url(../photos/jquery.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateX(-210%);
+}
+.home-container .logo .main-img .circle:nth-child(8){
+    background: url(../photos/mysql.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-150%,-150%);
+}
+.home-container img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(108,161,197);
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fad-in 1s ease 0.5s forwards;
+}
+@keyframes fad-in{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.item img{
+    width: 5%;
+    height: 9vh;
+}      
+  
+.skill-slider{
+display: flex;
+flex-flow: row wrap;
+gap: 55px;
+}
+.item{
+    padding: 5px;
+}
+.item h5{
+    /* text-align: center; */
+    align-items: center;
+}
+.skillsh2{
+    background: linear-gradient(
+  92.23deg,
+  #ff56f6 21.43%,
+  #b936ee 50.63%,
+  #3bace2 100%,
+  #406aff 117.04%
+);
+box-shadow: 0px 4.42184px 107.23px rgba(255,86,246,0.51);
+padding: 10px;
+border: 3px solid white;
+}
+.skills-wraper{
+    display: flex;    
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 30px;
+}
+.skill{
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3),-5px -5px 20px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    position: relative;
+    display:grid;
+   
+    place-items: center;
+}
+.skill::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #131313;
+    box-shadow: inset 5px 5px 5px 20px rgb(0,0,0,0.3),inset -5px -5px 20px rgba(0,0,0,0.3);
+}
+.skill:nth-child(1){
+    background-image: conic-gradient(#f16524 90%,transparent 0);
+    color: #f16524;    
+}
+.skill:nth-child(2){
+    background-image: conic-gradient(#1b84c1 70%,transparent 0);
+    color: #1b84c1;
+}
+.skill:nth-child(3){
+    background-image: conic-gradient(#e85494 60%,transparent 0);
+    color: #e85494;
+}
+.skill:nth-child(4){
+    background-image: conic-gradient(#ebd50ff7 80%,transparent 0);
+    color: #ebd50ff7;
+}.skill:nth-child(5){
+    background-image: conic-gradient(#75e810 80%,transparent 0);
+    color: #75e810;
+}.skill:nth-child(6){
+    background-image: conic-gradient(#1bffdd 70%,transparent 0);
+    color: #1bffdd;
+}
+.skill:nth-child(7){
+    background-image: conic-gradient(#7c99e7 75%,transparent 0);
+    color: #7c99e7;
+}
+.skill:nth-child(8){
+    background-image: conic-gradient(#6a1357 70%,transparent 0);
+    color: #6a1357;
+}
+.skill:nth-child(9){
+    background-image: conic-gradient(#f61818 80%,transparent 0);
+    color: #f61818;
+}
+.skill:nth-child(10){
+    background-image: conic-gradient(#085606 75%,transparent 0);
+    color: #085606;
+}
+.skill:nth-child(11){
+    background-image: conic-gradient(#fff 60%,transparent 0);
+    color: #fff;
+}
+.skill:nth-child(12){
+    background-image: conic-gradient(black 80%,transparent 0);
+    color: white;
+}
+.content{
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 1;
+    text-align: center;
+}
+.content span{
+    display: block;
+}
+.body{
+    background-color: black;
+    padding: 100px 20px;
+    border-radius: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .skill{
+        width: 30%;
+        gap: 50px;
+    }
+    .home-container .logo .circle{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: rgb(4,4,44);
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease;
+        opacity: 0;
+    }
+  
+  }

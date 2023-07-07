@@ -1,0 +1,80 @@
+
+.banner{
+
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;    
+    padding: 10px 18px;
+}
+.name{
+    font-size: 30px;
+    background: linear-gradient(
+  92.23deg,
+  #ff56f6 21.43%,
+  #b936ee 50.63%,
+  #3bace2 100%,
+  #406aff 117.04%
+);
+box-shadow: 0px 4.42184px 107.23px rgba(255,86,246,0.51);
+padding: 10px;
+border: 3px solid white;
+}
+.lettermove{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 0, 183);
+}
+.updownimage img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.banner{
+  width: 100%;
+  padding: 100px 0;
+  background-image: url('../photos/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bannerbtn{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+.bannerh5{
+    text-transform: capitalize;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.icons a{
+    color: white;
+}
+.icons .icon1:Hover{
+color: rgb(226, 48, 199);
+}
+.icons .icon2:Hover{
+    color: orange;
+}.icons .icon3:Hover{
+        color: blue;
+}
+@media only screen and (max-width: 768px) {
+    .lettermove{
+        font-size: 35px;
+    }
+}

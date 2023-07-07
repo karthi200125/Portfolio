@@ -1,0 +1,47 @@
+.h2{
+    background: linear-gradient(
+  92.23deg,
+  #ff56f6 21.43%,
+  #b936ee 50.63%,
+  #3bace2 100%,
+  #406aff 117.04%
+);
+box-shadow: 0px 4.42184px 107.23px rgba(255,86,246,0.51);
+padding: 10px;
+border: 3px solid white;
+text-align: center;
+text-transform: uppercase;
+font-weight: 900;
+}
+.about-img{
+    
+    margin-right: 30px;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px 1px;
+    cursor: pointer;
+}
+.icons .icon1:Hover{
+color: rgb(233, 10, 121);
+transform: scale(1.7);
+transition: 0.5s;
+}
+.icons .icon2:Hover{
+    color: orange;
+    transform: scale(1.7);
+transition: 0.5s;
+}.icons .icon3:Hover{
+        color: blue;
+        transform: scale(1.7);
+transition: 0.5s;
+        }
+.h3{
+    text-transform: capitalize;
+}
+.aboutp{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
